@@ -6,6 +6,7 @@ import java.util.Random;
 
 import sort.impl.BubbleSort;
 import sort.impl.MergeSort;
+import sort.impl.QuickSort;
 
 public class SortMain {
 	public static final int size = 1000;
@@ -17,7 +18,7 @@ public class SortMain {
 			array.add(rand.nextInt());
 		}
 
-		Sorter sorter = new MergeSort();
+		Sorter sorter = new QuickSort();
 
 		sorter.sort(array);
 
